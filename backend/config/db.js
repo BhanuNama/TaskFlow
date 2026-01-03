@@ -1,7 +1,11 @@
 const { Sequelize } = require('sequelize');
 
+if (!process.env.DATABASE_URL) {
+  throw new Error('DATABASE_URL environment variable is required');
+}
+
 const sequelize = new Sequelize(
-  process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_QznpmJ3KT7AM@ep-old-lab-adiqon0x-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require',
+  process.env.DATABASE_URL,
   {
     dialect: 'postgres',
     dialectOptions: {
