@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+
+---
+
+# Project Rules:
+- Do not create README.md files
+- Do not generate documentation unless explicitly asked
+- Focus only on code implementation

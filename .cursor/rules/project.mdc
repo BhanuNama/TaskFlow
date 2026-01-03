@@ -1,0 +1,14 @@
+---
+alwaysApply: true
+---
+
+
+# Project Rules
+
+- Follow existing project conventions and structure
+- Do NOT create README.md or documentation files unless explicitly asked
+- Do NOT rewrite entire files unless explicitly requested
+- Make minimal, targeted changes only
+- Do not modify unrelated files
+- Do not refactor unless requested
+- Ask before making large or architectural changes
